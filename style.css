@@ -21,6 +21,7 @@ body {
     display: flex;
     box-shadow: 0 0 55px rgba(0, 0, 0, 0.5);
     transition: width 500ms ease;
+    border-radius: .5em;
 }
 .container:hover {    
     width: 600px;
@@ -30,7 +31,8 @@ body {
 }
 .container:hover .desc {
     display: block;    
-    transform: translate(300px);
+    transform: translate(300px);    
+    border-radius: 0 .5em .5em 0;
 }
 .container .image {
     position: relative;
@@ -41,6 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 999;
+    border-radius: .5em;
 }
 .container .image::after {
     content: '';
@@ -66,6 +69,7 @@ body {
     z-index: 0;
     transform: translate(0px);
     transition: transform 500ms ease;
+    border-radius: .5em;
 }
 .container .desc .title h2 {
     font-size: 25px;
@@ -144,6 +148,7 @@ body {
     }
     .container:hover .desc {
         transform: translate(0px);
-        transform: translateY(300px);
+        transform: translateY(300px); 
+        border-radius: 0 0 .5em .5em;
     }
 }
